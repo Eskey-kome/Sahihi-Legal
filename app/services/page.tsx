@@ -170,12 +170,12 @@ export default function ServicesPage() {
             backgroundRepeat: "no-repeat",
           }}
         />
-        {/* Dark overlay — heavy on the left where text sits, lighter on the right */}
+        {/* Dark overlay */}
         <div
           className="absolute inset-0 z-10"
           style={{
-           background:
-  "linear-gradient(to right, rgba(0,0,0,0.88) 50%, rgba(0,0,0,0.55) 100%)",
+            background:
+              "linear-gradient(to right, rgba(0,0,0,0.88) 50%, rgba(0,0,0,0.55) 100%)",
           }}
         />
         {/* Content */}
@@ -194,13 +194,14 @@ export default function ServicesPage() {
             growing enterprises and international businesses operating in Kenya
             and across global markets.
           </p>
-          <div className="mt-8 flex gap-4">
+          <div className="mt-8 flex flex-wrap gap-4">
             <Link
               href="/contact"
               className="bg-white text-[#0A2342] px-6 py-3 rounded-md font-semibold hover:bg-gray-200 transition text-sm"
             >
               Book a Consultation
             </Link>
+            
             <a
               href="https://wa.me/254737776749"
               target="_blank"
@@ -231,8 +232,8 @@ export default function ServicesPage() {
               <div
                 key={service.id}
                 className={`relative p-8 border-gray-100 cursor-pointer transition-all duration-300 group
-                  ${idx % 2 === 0 ? "border-r" : ""}
-                  ${idx < services.length - 2 ? "border-b" : ""}
+                  ${idx % 2 === 0 ? "md:border-r" : ""}
+                  border-b
                   ${activeService === service.id ? "bg-white text-[#0A2342]" : "bg-[#0A2342] hover:bg-[#0d2d56]"}
                 `}
                 onClick={() =>
@@ -242,7 +243,7 @@ export default function ServicesPage() {
                 {/* Number */}
                 <p
                   className={`text-5xl font-bold leading-none mb-4 transition-colors duration-300 ${
-                   activeService === service.id
+                    activeService === service.id
                       ? "text-[#0A2342]/10"
                       : "text-white/10"
                   }`}
@@ -253,7 +254,7 @@ export default function ServicesPage() {
 
                 <h3
                   className={`text-xl font-bold mb-1 transition-colors duration-300 ${
-                  activeService === service.id ? "text-[#0A2342]" : "text-white"
+                    activeService === service.id ? "text-[#0A2342]" : "text-white"
                   }`}
                 >
                   {service.title}
@@ -267,7 +268,7 @@ export default function ServicesPage() {
                 </p>
                 <p
                   className={`text-sm leading-relaxed transition-colors duration-300 ${
-                 activeService === service.id ? "text-gray-600" : "text-gray-300"
+                    activeService === service.id ? "text-gray-600" : "text-gray-300"
                   }`}
                 >
                   {service.description}
@@ -276,20 +277,18 @@ export default function ServicesPage() {
                 {/* Expanded details */}
                 <div
                   className={`overflow-hidden transition-all duration-500 ${
-                  activeService === service.id
+                    activeService === service.id
                       ? "max-h-[600px] opacity-100 mt-6"
                       : "max-h-0 opacity-0"
                   }`}
                 >
-                  <p
-                 className="text-xs uppercase tracking-widest font-semibold text-blue-500 mb-3"
-                  >
+                  <p className="text-xs uppercase tracking-widest font-semibold text-blue-500 mb-3">
                     Includes
                   </p>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-1.5 gap-x-4">
                     {service.details.map((d) => (
-                     <li key={d} className="flex items-center gap-2 text-sm text-gray-600">
-                     <span className="w-1 h-1 rounded-full bg-blue-400 flex-shrink-0" />
+                      <li key={d} className="flex items-center gap-2 text-sm text-gray-600">
+                        <span className="w-1 h-1 rounded-full bg-blue-400 flex-shrink-0" />
                         {d}
                       </li>
                     ))}
@@ -299,7 +298,7 @@ export default function ServicesPage() {
                 {/* Toggle hint */}
                 <div
                   className={`mt-5 flex items-center gap-1.5 text-xs font-semibold transition-colors duration-300 ${
-                   activeService === service.id ? "text-[#0A2342]/50 group-hover:text-[#0A2342]" : "text-white/50 group-hover:text-white"
+                    activeService === service.id ? "text-[#0A2342]/50 group-hover:text-[#0A2342]" : "text-white/50 group-hover:text-white"
                   }`}
                 >
                   <span>
@@ -327,7 +326,7 @@ export default function ServicesPage() {
       <section className="w-full bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 md:px-10 py-24">
           <div className="flex flex-col lg:flex-row gap-16 items-start">
-            <div className="lg:w-[380px] flex-shrink-0">
+            <div className="w-full lg:w-[380px]">
               <p className="text-xs uppercase tracking-[0.2em] text-blue-500 font-medium mb-4">
                 Why Sahihi Legal
               </p>
@@ -338,12 +337,12 @@ export default function ServicesPage() {
                 The difference is in how we think.
               </h2>
               <p className="mt-5 text-gray-500 text-base leading-relaxed">
-                We don't just practice law we practice it with a commercial mindset, 
+                We don't just practice law we practice it with a commercial mindset,
                 a digital edge and a genuine commitment to your outcomes.
               </p>
               <Link
                 href="/about"
-               className="inline-block mt-8 bg-[#0A2342] text-white text-sm font-semibold px-6 py-3 rounded-lg border border-[#0A2342] hover:bg-white hover:text-[#0A2342] transition"
+                className="inline-block mt-8 bg-[#0A2342] text-white text-sm font-semibold px-6 py-3 rounded-lg border border-[#0A2342] hover:bg-white hover:text-[#0A2342] transition"
               >
                 Learn About Us →
               </Link>
@@ -353,10 +352,10 @@ export default function ServicesPage() {
               {whyItems.map((item) => (
                 <div
                   key={item.label}
-                 className="p-7 bg-[#0A2342] border border-[#0d2d56] rounded-xl shadow-sm"
+                  className="p-7 bg-[#0A2342] border border-[#0d2d56] rounded-xl shadow-sm"
                 >
-      <p className="text-sm font-bold text-white mb-2">{item.label}</p>
-               <p className="text-sm text-gray-300 leading-relaxed">{item.body}</p>
+                  <p className="text-sm font-bold text-white mb-2">{item.label}</p>
+                  <p className="text-sm text-gray-300 leading-relaxed">{item.body}</p>
                 </div>
               ))}
             </div>

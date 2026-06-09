@@ -119,7 +119,7 @@ export default function InsightsPage() {
             priority
           />
         </div>
-        {/* Layered overlays: bottom-up dark + left vignette */}
+        {/* Layered overlays */}
         <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/85 via-black/50 to-black/15" />
         <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
 
@@ -152,7 +152,7 @@ export default function InsightsPage() {
           </h1>
 
           {/* Sub-row: description + divider + stat */}
-          <div className="mt-7 flex flex-col sm:flex-row sm:items-end gap-6">
+          <div className="mt-7 flex flex-col sm:flex-row sm:items-end flex-wrap gap-6">
             <p className="text-gray-200 text-base leading-relaxed max-w-lg">
               Practical legal commentary on corporate law, compliance, data protection
               and technology  written for founders, investors and business leaders
@@ -238,7 +238,7 @@ export default function InsightsPage() {
                       {featured.excerpt}
                     </p>
                   </div>
-                  <div className="mt-10 flex items-center justify-between">
+                  <div className="mt-10 flex flex-wrap items-center justify-between gap-4">
                     <div className="flex items-center gap-4 text-xs text-gray-400">
                       <span>{featured.date}</span>
                       <span>·</span>
@@ -339,9 +339,9 @@ export default function InsightsPage() {
           )}
 
           {/* CTA BANNER */}
-          <div className="mt-16 bg-[#0A2342] rounded-2xl px-10 py-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+          <div className="mt-16 bg-[#0A2342] rounded-2xl px-10 py-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl text-center md:text-left">
             <div>
-              <div className="flex items-center gap-3 mb-3">
+              <div className="flex items-center justify-center md:justify-start gap-3 mb-3">
                 <div className="w-6 h-px bg-amber-400" />
                 <p className="text-xs uppercase tracking-widest text-amber-400 font-semibold">Get Advice</p>
               </div>

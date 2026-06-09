@@ -83,7 +83,7 @@ const team = [
               commercial realities  delivering advice that is precise, practical
               and built to move your business forward.
             </p>
-            <div className="mt-8 flex gap-4">
+            <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 href="/contact"
                 className="bg-white text-[#0A2342] px-6 py-3 rounded-md font-semibold hover:bg-gray-200 transition"
@@ -99,7 +99,7 @@ const team = [
             </div>
           </div>
           <div className="flex-1 flex justify-center">
-            <div className="relative w-full max-w-lg md:max-w-xl">
+            <div className="relative w-full max-w-sm md:max-w-lg xl:max-w-xl">
               <Image
                 src="/Law-photo-3.jpg"
                 alt="Sahihi Legal Team"
@@ -145,7 +145,7 @@ const team = [
               </p>
             </div>
 
-            <div className="flex-shrink-0 w-full lg:w-[480px] xl:w-[540px]">
+            <div className="w-full lg:w-[480px] xl:w-[540px]">
               <div className="w-full rounded-2xl bg-[#0A2342] p-8 flex flex-col gap-4 shadow-2xl">
                 <p
                   className="text-white/5 font-bold text-6xl"
@@ -252,7 +252,7 @@ const team = [
             A dedicated group of both legal and technical professionals committed to
             delivering exceptional results for our clients.
           </p>
-<div className="grid grid-cols-1 md:grid-cols-2 divide-x divide-y md:divide-y-0 divide-gray-100 border border-gray-100 rounded-xl overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-2 divide-x divide-y md:divide-y-0 divide-gray-100 border border-gray-100 rounded-xl overflow-hidden">
             {team.map((member, i) => (
               <div key={i} className="p-8 bg-white">
                 <div className="flex items-center gap-4 mb-5">

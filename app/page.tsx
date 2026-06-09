@@ -82,7 +82,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex-1 flex justify-center">
-            <div className="relative w-full max-w-lg md:max-w-xl">
+          <div className="relative w-full max-w-sm md:max-w-lg xl:max-w-xl">
               <Image
                 src="/law-photo-1.avif"
                 alt="Sahihi Legal Office"
@@ -124,7 +124,7 @@ export default function Home() {
               </p>
             </div>
 
-          <div className="flex-shrink-0 w-full lg:w-[480px] xl:w-[540px]">
+         <div className="w-full lg:w-[420px] xl:w-[500px]">
   <div className="w-full rounded-2xl bg-[#0A2342] p-8 flex flex-col gap-4 shadow-2xl">
     <p className="text-white/5 font-bold text-6xl" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>SL</p>
     <div className="grid grid-cols-2 gap-3">
@@ -365,7 +365,7 @@ export default function Home() {
           </div>
 
           {/* RIGHT — IMAGE */}
-         <div className="flex w-[480px] xl:w-[520px] flex-shrink-0 items-start pt-[160px] pb-[80px]">
+       <div className="hidden lg:flex lg:w-[420px] xl:w-[520px] flex-shrink-0 items-start pt-[160px] pb-[80px]">
             <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-xl">
               <Image
                 src="/law-photo-2.jpg.jpg"

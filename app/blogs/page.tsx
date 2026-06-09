@@ -156,13 +156,14 @@ export default function BlogsPage() {
             founders, business owners and professionals who want to stay
             informed and ahead.
           </p>
-          <div className="mt-8 flex gap-4">
+          <div className="mt-8 flex flex-wrap gap-4">
             <Link
               href="/contact"
               className="bg-white text-[#0A2342] px-6 py-3 rounded-md font-semibold hover:bg-gray-200 transition text-sm"
             >
               Book a Consultation
             </Link>
+            
             <a
               href="https://wa.me/254737776749"
               target="_blank"
@@ -329,9 +330,9 @@ export default function BlogsPage() {
           )}
 
           {/* CTA BANNER */}
-          <div className="mt-16 bg-[#0A2342] rounded-2xl px-10 py-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+          <div className="mt-16 bg-[#0A2342] rounded-2xl px-10 py-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl text-center md:text-left">
             <div>
-              <div className="flex items-center gap-3 mb-3">
+              <div className="flex items-center justify-center md:justify-start gap-3 mb-3">
                 <div className="w-6 h-px bg-amber-400" />
                 <p className="text-xs uppercase tracking-widest text-amber-400 font-semibold">Get Advice</p>
               </div>
