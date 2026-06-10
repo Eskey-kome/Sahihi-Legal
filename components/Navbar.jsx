@@ -38,9 +38,9 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Desktop: KK & Company Advocates — bordered block like IKM */}
+        {/* Desktop: KK & Company Advocates */}
         <div className="hidden md:flex items-center z-10">
-          <div className="border border-[#0A2342] px-4 py-2 leading-tight">
+          <div className="leading-tight">
             <p className="text-[11px] font-semibold tracking-[0.15em] text-[#0A2342] uppercase">
               KK &amp; Company
             </p>
@@ -103,14 +103,12 @@ export default function Navbar() {
 
           {/* Mobile: KK & Company Advocates */}
           <div className="mt-3 pt-3 border-t border-gray-100">
-            <div className="border border-[#0A2342] px-4 py-2 leading-tight inline-block">
-              <p className="text-[11px] font-semibold tracking-[0.15em] text-[#0A2342] uppercase">
-                KK &amp; Company
-              </p>
-              <p className="text-[10px] tracking-[0.2em] text-[#4a6080] uppercase font-medium">
-                Advocates
-              </p>
-            </div>
+            <p className="text-[11px] font-semibold tracking-[0.15em] text-[#0A2342] uppercase">
+              KK &amp; Company
+            </p>
+            <p className="text-[10px] tracking-[0.2em] text-[#4a6080] uppercase font-medium">
+              Advocates
+            </p>
           </div>
         </nav>
       </div>
