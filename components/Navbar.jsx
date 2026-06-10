@@ -17,14 +17,14 @@ export default function Navbar() {
 
   return (
     <header className="w-full bg-white sticky top-0 z-50 border-b border-gray-100">
-      <div className="relative w-full flex items-center justify-between px-10 py-5">
+      <div className="relative w-full flex items-center justify-between px-10 py-4">
 
         {/* Logo */}
         <div className="text-xl font-bold text-[#0A2342] tracking-tight z-10">
           Sahihi Legal
         </div>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Navigation — centered */}
         <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-8">
           {links.map((link) => (
             <Link
@@ -38,16 +38,16 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Desktop CTA */}
-        <div className="hidden md:block z-10">
-          <a
-            href="https://wa.me/254737776749"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#0A2342] text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-[#0d2e56] transition-colors duration-200"
-          >
-            Get in Touch
-          </a>
+        {/* Desktop: KK & Company Advocates — bordered block like IKM */}
+        <div className="hidden md:flex items-center z-10">
+          <div className="border border-[#0A2342] px-4 py-2 leading-tight">
+            <p className="text-[11px] font-semibold tracking-[0.15em] text-[#0A2342] uppercase">
+              KK &amp; Company
+            </p>
+            <p className="text-[10px] tracking-[0.2em] text-[#4a6080] uppercase font-medium">
+              Advocates
+            </p>
+          </div>
         </div>
 
         {/* Mobile Menu Button */}
@@ -101,14 +101,17 @@ export default function Navbar() {
             </Link>
           ))}
 
-          <a
-            href="https://wa.me/254737776749"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-2 bg-[#0A2342] text-white text-sm font-semibold px-5 py-3 rounded-lg text-center"
-          >
-            Get in Touch
-          </a>
+          {/* Mobile: KK & Company Advocates */}
+          <div className="mt-3 pt-3 border-t border-gray-100">
+            <div className="border border-[#0A2342] px-4 py-2 leading-tight inline-block">
+              <p className="text-[11px] font-semibold tracking-[0.15em] text-[#0A2342] uppercase">
+                KK &amp; Company
+              </p>
+              <p className="text-[10px] tracking-[0.2em] text-[#4a6080] uppercase font-medium">
+                Advocates
+              </p>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
