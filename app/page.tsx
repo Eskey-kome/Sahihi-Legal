@@ -125,14 +125,14 @@ export default function Home() {
             </div>
 
          <div className="w-full lg:w-[420px] xl:w-[500px]">
-  <div className="w-full rounded-2xl bg-[#0A2342] p-8 flex flex-col gap-4 shadow-2xl">
-    <p className="text-white/5 font-bold text-6xl" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>SL</p>
- <div className="grid grid-cols-1 gap-3">
+  <div className="w-full rounded-2xl bg-[#0A2342] p-8 flex flex-col justify-between gap-6 shadow-2xl min-h-[340px]">
+    <p className="text-white/[0.04] font-bold text-[120px] leading-none -mt-4" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>SL</p>
+    <div className="grid grid-cols-1 gap-4 -mt-8">
       {[
-       { label: "Founded", value: "2026", sub: "Nairobi, Kenya" },
-{ label: "Approach", value: "Digital-first", sub: "Business-led legal" },
+     { label: "Founded", value: "2025", sub: "Nairobi, Kenya" },
+{ label: "Approach", value: "Digital-first", sub: "A digital-first legal practice supporting investment, innovation and corporate growth across Africa and cross-border markets" },
       ].map((item) => (
-        <div key={item.label} className="bg-white/10 border border-white/20 rounded-lg p-3">
+      <div key={item.label} className="bg-white/10 border border-white/20 rounded-lg p-5">
           <span className="text-[10px] tracking-[0.15em] uppercase text-blue-300 font-bold block mb-1">{item.label}</span>
           <span className="text-white font-bold text-lg block" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>{item.value}</span>
           <span className="text-white/50 text-xs">{item.sub}</span>

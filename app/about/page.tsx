@@ -115,8 +115,8 @@ const team = [
    {/* ── OUR STORY ── */}
       <section className="w-full bg-white">
         <div className="max-w-6xl mx-auto px-6 md:px-10 py-28">
-         <div className="flex flex-col lg:flex-row gap-16 items-end mb-14">
-            <div className="flex-1 min-w-0">
+  <div className="flex flex-col lg:flex-row gap-16 items-end mb-14">
+           <div className="flex-1 min-w-0 flex flex-col justify-end">
               <p className="text-xs uppercase tracking-[0.2em] text-blue-500 font-medium mb-5">
                 Our Story
               </p>
@@ -145,7 +145,7 @@ const team = [
               </p>
             </div>
 
-            <div className="w-full lg:w-[480px] xl:w-[540px]">
+         <div className="w-full lg:w-[480px] xl:w-[540px] lg:pt-[280px]">
               <div className="w-full rounded-2xl bg-[#0A2342] p-8 flex flex-col gap-4 shadow-2xl">
                 <p
                   className="text-white/5 font-bold text-6xl"
@@ -153,12 +153,10 @@ const team = [
                 >
                   SL
                 </p>
-                <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 gap-3">
                   {[
-                    { label: "Founded", value: "2026", sub: "Nairobi, Kenya" },
-                    { label: "Markets", value: "Pan-Africa", sub: "+ Global reach" },
-                    { label: "Approach", value: "Digital-first", sub: "Business-led legal" },
-                    { label: "Focus", value: "Startups", sub: "Investors and Orgs" },
+                   { label: "Founded", value: "2025", sub: "Nairobi, Kenya" },
+                   { label: "Approach", value: "Digital-first", sub: "A digital-first legal practice supporting investment, innovation and corporate growth across Africa and cross-border markets" },
                   ].map((item) => (
                     <div key={item.label} className="bg-white/10 border border-white/20 rounded-lg p-3">
                       <span className="text-[10px] tracking-[0.15em] uppercase text-blue-300 font-bold block mb-1">
