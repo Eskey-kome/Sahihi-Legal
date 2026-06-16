@@ -61,11 +61,11 @@ export default function Home() {
       <section className="w-full bg-[#0A2342] text-white">
         <div className="max-w-6xl mx-auto px-6 md:px-10 py-24 flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1">
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight">Sahihi Legal</h1>
-            <h2 className="mt-4 text-xl md:text-2xl font-medium text-blue-200">
-              Protect what you build
-            </h2>
-            <p className="mt-6 text-gray-200 text-lg leading-relaxed max-w-xl">
+    
+    <h2 className="text-3xl md:text-4xl font-bold leading-tight text-blue-200" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+  Protect what you build.
+</h2> 
+ <p className="mt-8 text-gray-300 text-lg leading-relaxed max-w-xl">
               We are a digitally-driven law firm helping startups,
               investors, venture capital firms and international businesses operate
               seamlessly in Kenya and across global markets.
@@ -103,7 +103,7 @@ export default function Home() {
 
             <div className="flex-1 min-w-0">
               <p className="text-xs uppercase tracking-[0.2em] text-blue-500 font-medium mb-5">
-                About Sahihi Legal
+                About US
               </p>
 
               <h2
@@ -118,7 +118,7 @@ export default function Home() {
               <div className="w-12 h-[2px] bg-[#0A2342] opacity-20 mb-10" />
 
               <p className="text-lg font-normal text-gray-600 leading-relaxed">
-                Sahihi Legal is a modern business law firm supporting startups, growing enterprises
+                We are a modern business law firm supporting startups, growing enterprises
                 and international businesses operating in Kenya and across global markets. Every
                 advisory we deliver is precise, practical and aligned with contemporary commercial realities.
               </p>
@@ -217,7 +217,7 @@ export default function Home() {
             </span>
 
             <h2 className="text-4xl md:text-5xl font-bold text-[#0A2342] leading-tight max-w-xl">
-              Ready to work with Sahihi Legal a firm that puts clients first?
+              Ready to work with a firm that puts clients first?
             </h2>
 
             <p className="mt-4 text-base text-gray-500 max-w-lg">

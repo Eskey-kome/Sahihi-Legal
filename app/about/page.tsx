@@ -63,7 +63,7 @@ const team = [
         <div className="max-w-6xl mx-auto px-6 md:px-10 py-24 flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1">
             <p className="text-xs uppercase tracking-[0.2em] text-blue-300 font-medium mb-4">
-              About Sahihi Legal
+              About US
             </p>
             <h1
               className="text-5xl md:text-6xl font-bold leading-tight"
@@ -75,7 +75,7 @@ const team = [
               A Modern Law Firm Built for African Businesses and Global markerts
             </h2>
             <p className="mt-6 text-gray-200 text-lg leading-relaxed max-w-xl">
-              Sahihi Legal is a digitally-driven law firm supporting startups,
+              We are a digitally-driven law firm supporting startups,
               growing enterprises, investors and international organisations operating
               in Kenya and across global markets.
               <br /><br />
