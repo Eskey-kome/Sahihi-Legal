@@ -16,8 +16,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Sahihi Legal",
   description: "A digitally-driven business law firm helping startups, investors and international businesses operate seamlessly in Kenya and across global markets.",
+  verification: {
+    google: "dsLxobWd0DbLTxjf3tIfCBIvZPj7UN0kbDBHijUPPGE",
+  },
 };
-
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
