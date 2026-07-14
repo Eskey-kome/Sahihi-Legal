@@ -38,7 +38,7 @@ export default function Home() {
     if (company) text += `\n*Company:* ${company}`;
     if (allServices.length) text += `\n*Services:* ${allServices.join(", ")}`;
     if (message) text += `\n\n*Brief:* ${message}`;
-    window.open(`https://wa.me/254737776749?text=${encodeURIComponent(text)}`, "_blank");
+    window.open(`https://wa.me/254769929070?text=${encodeURIComponent(text)}`, "_blank");
   };
 
   const footerLinks = [
@@ -83,11 +83,12 @@ export default function Home() {
           </div>
           <div className="flex-1 flex justify-center">
           <div className="relative w-full max-w-sm md:max-w-lg xl:max-w-xl">
-              <Image
+             <Image
                 src="/law-photo-1.avif"
                 alt="Sahihi Legal Office"
                 width={650}
                 height={750}
+                priority
                 className="rounded-xl shadow-2xl object-cover"
               />
             </div>
@@ -347,16 +348,12 @@ export default function Home() {
               </button>
 <p className="text-center text-sm text-gray-400 pb-2">
   Email:{" "}
-  <a href="https://mail.google.com/mail/?view=cm&to=esmurimi@gmail.com" target="_blank" rel="noopener noreferrer" className="text-[#0A2342] font-semibold hover:underline">
-    esmurimi@gmail.com
-  </a>{" "}
-  or{" "}
-  <a href="https://mail.google.com/mail/?view=cm&to=ekome61933@anu.ac.ke" target="_blank" rel="noopener noreferrer" className="text-[#0A2342] font-semibold hover:underline">
-    ekome61933@anu.ac.ke
+  <a href="https://mail.google.com/mail/?view=cm&to=info@sahihilegal.co.ke" target="_blank" rel="noopener noreferrer" className="text-[#0A2342] font-semibold hover:underline">
+    info@sahihilegal.co.ke
   </a>{" "}
   &nbsp;·&nbsp; WhatsApp:{" "}
-  <a href="https://wa.me/254737776749" className="text-[#0A2342] font-semibold hover:underline">
-    0737 776 749
+  <a href="https://wa.me/254769929070" className="text-[#0A2342] font-semibold hover:underline">
+    0769 929 070
   </a>
 </p>
             </div>
@@ -428,7 +425,7 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://wa.me/254737776749" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+                  <a href="https://wa.me/254769929070" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
                     WhatsApp
                   </a>
                 </li>
@@ -440,18 +437,13 @@ export default function Home() {
               <h4 className="text-sm font-bold uppercase tracking-widest text-blue-300 mb-4">Contact Us</h4>
               <ul className="space-y-3 text-sm text-gray-300">
                 <li>
-                  <a href="mailto:esmurimi@gmail.com" className="hover:text-white transition">
-                    esmurimi@gmail.com
+                  <a href="mailto:info@sahihilegal.co.ke" className="hover:text-white transition">
+                    info@sahihilegal.co.ke
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:ekome61933@anu.ac.ke" className="hover:text-white transition">
-                    ekome61933@anu.ac.ke
-                  </a>
-                </li>
-                <li>
-                  <a href="https://wa.me/254737776749" className="hover:text-white transition">
-                    WhatsApp: 0737 776 749
+                  <a href="https://wa.me/254769929070" className="hover:text-white transition">
+                    WhatsApp: 0769 929 070
                   </a>
                 </li>
                 <li className="pt-1 text-gray-500">Nairobi, Kenya</li>

@@ -165,11 +165,11 @@ export default function BlogsPage() {
             </Link>
             
             <a
-              href="https://wa.me/254737776749"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-[#0A2342] transition text-sm"
-            >
+            href="https://wa.me/254769929070"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="border border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-[#0A2342] transition text-sm"
+>
               WhatsApp Us
             </a>
           </div>
@@ -384,7 +384,7 @@ export default function BlogsPage() {
                   ["LinkedIn", "https://www.linkedin.com/company/sahihi-legal"],
                   ["X (Twitter)", "https://twitter.com/SahihiLegal"],
                   ["YouTube", "https://www.youtube.com/@SahihiLegal"],
-                  ["WhatsApp", "https://wa.me/254737776749"],
+                ["WhatsApp", "https://wa.me/254769929070"],
                 ].map(([name, href]) => (
                   <li key={name}><a href={href} target="_blank" rel="noopener noreferrer" className="hover:text-white transition">{name}</a></li>
                 ))}
@@ -393,9 +393,8 @@ export default function BlogsPage() {
             <div>
               <h4 className="text-sm font-bold uppercase tracking-widest text-blue-300 mb-4">Contact Us</h4>
               <ul className="space-y-3 text-sm text-gray-300">
-                <li><a href="mailto:esmurimi@gmail.com" className="hover:text-white transition">esmurimi@gmail.com</a></li>
-                <li><a href="mailto:ekome61933@anu.ac.ke" className="hover:text-white transition">ekome61933@anu.ac.ke</a></li>
-                <li><a href="https://wa.me/254737776749" className="hover:text-white transition">WhatsApp: 0737 776 749</a></li>
+              <li><a href="mailto:info@sahihilegal.co.ke" className="hover:text-white transition">info@sahihilegal.co.ke</a></li>
+<li><a href="https://wa.me/254769929070" className="hover:text-white transition">WhatsApp: 0769 929 070</a></li>
                 <li className="pt-1 text-gray-500">Nairobi, Kenya</li>
               </ul>
             </div>

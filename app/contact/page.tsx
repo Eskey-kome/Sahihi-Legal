@@ -31,7 +31,7 @@ export default function ContactPage() {
     if (service) text += `\n*Service Area:* ${service}`;
     if (message) text += `\n\n*Message:* ${message}`;
 
-    window.open(`https://wa.me/254737776749?text=${encodeURIComponent(text)}`, "_blank");
+window.open(`https://wa.me/254769929070?text=${encodeURIComponent(text)}`, "_blank");
     setSubmitted(true);
   };
 
@@ -85,8 +85,8 @@ export default function ContactPage() {
           </p>
           <div className="mt-8 flex gap-4 flex-wrap">
             <a
-              href="https://wa.me/254737776749"
-              target="_blank"
+            href="https://wa.me/254769929070"
+  target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-[#0A2342] px-6 py-3 rounded-md font-semibold hover:bg-gray-200 transition text-sm"
             >
@@ -94,8 +94,8 @@ export default function ContactPage() {
             </a>
             
             <a
-              href="https://mail.google.com/mail/?view=cm&to=esmurimi@gmail.com"
-              target="_blank"
+            href="https://mail.google.com/mail/?view=cm&to=info@sahihilegal.co.ke"
+  target="_blank"
               rel="noopener noreferrer"
               className="border border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-[#0A2342] transition text-sm"
             >
@@ -125,17 +125,15 @@ export default function ContactPage() {
             </p>
 
             {/* Inline contact info */}
-            <div className="flex flex-wrap gap-x-4 gap-y-2 mb-10 text-sm items-center">
-              <a href="mailto:esmurimi@gmail.com" className="text-[#0A2342] font-medium hover:underline">esmurimi@gmail.com</a>
-              <span className="text-gray-300">·</span>
-              <a href="mailto:ekome61933@anu.ac.ke" className="text-[#0A2342] font-medium hover:underline">ekome61933@anu.ac.ke</a>
-              <span className="text-gray-300">·</span>
-              <a href="https://wa.me/254737776749" className="text-[#0A2342] font-medium hover:underline">+254 737 776 749</a>
-              <span className="text-gray-300">·</span>
-              <span className="text-gray-500">Nairobi, Kenya</span>
-            </div>
+          <div className="flex flex-wrap gap-x-4 gap-y-2 mb-10 text-sm items-center">
+  <a href="mailto:info@sahihilegal.co.ke" className="text-[#0A2342] font-medium hover:underline">info@sahihilegal.co.ke</a>
+  <span className="text-gray-300">·</span>
+  <a href="https://wa.me/254769929070" className="text-[#0A2342] font-medium hover:underline">+254 769 929 070</a>
+  <span className="text-gray-300">·</span>
+  <span className="text-gray-500">Nairobi, Kenya</span>
+</div>
 
-            {submitted ? (
+       {submitted ? (
               <div className="h-full flex flex-col items-center justify-center text-center py-20">
                 <div className="w-16 h-16 rounded-full bg-[#0A2342]/5 flex items-center justify-center mb-6">
                   <svg className="w-7 h-7 text-[#0A2342]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -286,11 +284,11 @@ export default function ContactPage() {
           </div>
           
           <a
-            href="https://wa.me/254737776749"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 bg-[#0A2342] text-white px-8 py-4 rounded-lg font-semibold text-sm hover:bg-[#0d2d56] transition"
-          >
+           href="https://wa.me/254769929070"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex-shrink-0 bg-[#0A2342] text-white px-8 py-4 rounded-lg font-semibold text-sm hover:bg-[#0d2d56] transition"
+>
             WhatsApp Us Now
           </a>
         </div>
@@ -326,15 +324,14 @@ export default function ContactPage() {
                 <li><a href="https://www.linkedin.com/company/sahihi-legal" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">LinkedIn</a></li>
                 <li><a href="https://twitter.com/SahihiLegal" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">X (Twitter)</a></li>
                 <li><a href="https://www.youtube.com/@SahihiLegal" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">YouTube</a></li>
-                <li><a href="https://wa.me/254737776749" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">WhatsApp</a></li>
+<li><a href="https://wa.me/254769929070" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">WhatsApp</a></li>
               </ul>
             </div>
             <div>
               <h4 className="text-sm font-bold uppercase tracking-widest text-blue-300 mb-4">Contact Us</h4>
               <ul className="space-y-3 text-sm text-gray-300">
-                <li><a href="mailto:esmurimi@gmail.com" className="hover:text-white transition">esmurimi@gmail.com</a></li>
-                <li><a href="mailto:ekome61933@anu.ac.ke" className="hover:text-white transition">ekome61933@anu.ac.ke</a></li>
-                <li><a href="https://wa.me/254737776749" className="hover:text-white transition">WhatsApp: 0737 776 749</a></li>
+              <li><a href="mailto:info@sahihilegal.co.ke" className="hover:text-white transition">info@sahihilegal.co.ke</a></li>
+<li><a href="https://wa.me/254769929070" className="hover:text-white transition">WhatsApp: 0769 929 070</a></li>
                 <li className="pt-1 text-gray-500">Nairobi, Kenya</li>
               </ul>
             </div>
